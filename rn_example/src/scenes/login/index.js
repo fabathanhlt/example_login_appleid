@@ -1,7 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import {Platform, View, StyleSheet} from 'react-native';
 import {AppleButton} from '@invertase/react-native-apple-authentication';
-import {onAppleAuthRequest} from '../../services/apple-sign-in-service';
 import {firebase} from '@react-native-firebase/auth';
 
 function LoginScreen({props, navigation}) {
@@ -28,6 +27,10 @@ function LoginScreen({props, navigation}) {
     console.log('error ' + error);
   }
 
+  function onClickAppleAuthentication() {
+    console.log('onClickAppleAuthentication');
+  }
+
   return (
     <View style={styles.container}>
       {Platform.OS === 'ios' ? (
@@ -36,11 +39,7 @@ function LoginScreen({props, navigation}) {
           buttonType={AppleButton.Type.SIGN_IN}
           style={styles.buttonApple}
           onPress={() => {
-            console.log('onAppleAuthRequest begin');
-            onAppleAuthRequest().then(userCredential => {
-              console.log('Apple login successful');
-              _onSuccessLogin(userCredential.user);
-            });
+            onClickAppleAuthentication();
           }}
         />
       ) : (
