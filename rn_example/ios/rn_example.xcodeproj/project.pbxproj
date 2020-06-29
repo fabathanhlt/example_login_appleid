@@ -59,6 +59,7 @@
 		2D02E4901E0B4A5D006451C7 /* rn_example-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "rn_example-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3EDA9EF1A961689F09C22AA4 /* Pods-rn_example-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rn_example-tvOSTests.release.xcconfig"; path = "Target Support Files/Pods-rn_example-tvOSTests/Pods-rn_example-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
 		56CA064798B772E9F53B05B2 /* Pods-rn_example-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rn_example-tvOSTests.debug.xcconfig"; path = "Target Support Files/Pods-rn_example-tvOSTests/Pods-rn_example-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
+		84B2FA0F24A9A69200873092 /* rn_example.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = rn_example.entitlements; path = rn_example/rn_example.entitlements; sourceTree = "<group>"; };
 		84DAD86B24A605F9007AFFDB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "rn_example/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		92E0C933821BC3AC5D8806CB /* Pods-rn_example-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rn_example-tvOS.release.xcconfig"; path = "Target Support Files/Pods-rn_example-tvOS/Pods-rn_example-tvOS.release.xcconfig"; sourceTree = "<group>"; };
 		980E3289832C3BA5AFAAABAB /* Pods-rn_example-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rn_example-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-rn_example-tvOS/Pods-rn_example-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
@@ -142,6 +143,7 @@
 		13B07FAE1A68108700A75B9A /* rn_example */ = {
 			isa = PBXGroup;
 			children = (
+				84B2FA0F24A9A69200873092 /* rn_example.entitlements */,
 				84DAD86B24A605F9007AFFDB /* GoogleService-Info.plist */,
 				008F07F21AC5B25A0029DE68 /* main.jsbundle */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
@@ -644,6 +646,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = rn_example/rn_example.entitlements;
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = "";
@@ -674,6 +677,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = rn_example/rn_example.entitlements;
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = "";
